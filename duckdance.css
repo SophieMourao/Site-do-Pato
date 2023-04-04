@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+img{
+    animation:dancing 0.5s infinite ;
+    width: 485px;
+}
+
+main{
+    animation: led 0.5s infinite;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@keyframes dancing{
+    0%{
+        transform: rotateZ(-20deg);
+    }
+    50%{
+        transform: rotateZ(20deg);
+    }
+    100%{
+        transform: rotateZ(-20deg);
+    }
+
+}
+
+@keyframes led{
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: green;
+    }
+}
